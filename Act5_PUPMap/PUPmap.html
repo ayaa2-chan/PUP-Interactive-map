@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="AssetMain/logo.png">
+    <title>PUP Interactive Map</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="positions.css">
+</head>
+<body>
+    <!-- Page 1 -->
+    <section id="home" class="page active">
+        <div class="overlay">
+            <img src="AssetMain/logo.png" alt="PUP Logo" class="logo">
+
+            <h1 id="title">PUP Interactive Map</h1>
+
+            <button id="btnMap"> PUP Map </button>
+
+            <div class="footer">
+
+        <p>Joseph Advento<br>BSIT 3-4</p>
+        </div>
+    </div>
+
+  </section>
+
+    <!-- Page 2 -->
+    <section id="map" class="page">
+        <img id="PUPmap" src="AssetMain/PUP.jpg" alt="PUP Vicinity Map" class="map-image">
+        <button id="back" class="home-btn">Home</button>
+
+        <!-- Left Side -->
+            <!-- main building button -->
+            <button id="mainBldg" title="Main Building"></button>
+
+            <!-- oval field -->
+            <button id="oval" title="Oval field"></button>
+
+            <!-- lagoon -->
+            <button id="lagoon" title="Lagoon"></button>
+
+            <!-- chapel -->
+            <button id="chapel" title="Inter-Faith Chapel"></button>
+
+            <!-- library -->
+            <button id="lib" title="Ninoy Aquino Learning Resource Center"></button>
+
+            <!-- OUS bldg -->
+            <button id="ousBldg" title="OUS Building"></button>
+
+            <!-- charlie -->
+            <button id="cdr" title="Charlie Del Rosario Building"></button>
+
+            <!-- linear -->
+            <button id="linear" title="Linear"></button>
+
+            <!-- obelisk -->
+            <button id="obelisk" title="Obelisk"></button>
+
+        <!-- Right Side -->
+            <!-- Pylon -->
+            <button id="pylon" title="Pylon"></button>
+
+            <!-- Mural -->
+            <button id="mural" title="PUP Mural"></button>
+
+            <!-- Visitor Lounge -->
+            <button id="visitors" title="Visitor Lounge"></button>
+
+            <!-- Gymnasium Lounge -->
+            <button id="gym" title="Gymnasium"></button>
+
+            <!-- Alumni Bdlg -->
+            <button id="alumni" title="Alumni & Human Kinetic Building"></button>
+
+            <!-- pool -->
+            <button id="pool" title="PUP pool"></button>
+
+            <!-- parking & tennis court -->
+            <button id="court" title="Parking & Tennis Court"></button>
+
+            <!-- Research center -->
+            <button id="research" title="Engineering and Science Research Center"></button>
+
+            <!-- PUP catwalk -->
+            <button id="catWalk" title="PUP Catwalk"></button>
+
+        <!-- COC, CEA, ITECH -->
+            <!-- COC bldg -->
+            <button id="coc" title="College of Communication Building"></button>
+
+            <!-- CEA bldg -->
+            <button id="cea" title="College of Engineering and Architecture Building"></button>
+
+            <!-- ITECH bldg -->
+            <button id="itech" title="Information Technology Building"></button>
+
+            <!-- Business Processing Office bldg -->
+            <button id="BPoffice" title="Business Processing Office"></button>
+
+            <!-- hasmin Building -->
+            <button id="hasmin" title="Hasmin Building"></button>
+
+
+        <!-- overlay + info panel -->
+        <div id="overlay"></div>
+        <iframe id="infoLeftPanel" class="info-panel"></iframe>
+        <iframe id="infoRightPanel" class="info-panel"></iframe>
+
+    </section>  
+
+    <script src="navigations.js"></script> 
+    <script src="panel.js"></script>
+</body>
+</html>

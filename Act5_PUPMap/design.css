@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page setup */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    justify-content: center center;
+}
+
+.page.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Home Page */
+#home {
+    background: url('AssetMain/PUPbg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+#title {
+    font-size: 110px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+#btnMap {
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btnMap {
+    background-color: #800000;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    padding: 15px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#btnMap:hover {
+    background-color: #fff200;
+    transform: scale(1.05);
+    color:#990000;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #80000061;
+    color: white;
+    font-weight: bold;
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* Map Page */
+#map {
+    background: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+#PUPmap {
+    background-position: no-repeat center center/cover;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fit; 
+    object-position: center;
+}
+
+/* Home Button Map Page */
+.home-btn {
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    padding: 10px 70px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+.home-btn:hover {
+    background-color: #fff200;
+    transform: scale(1.05);
+    color:#990000;
+}

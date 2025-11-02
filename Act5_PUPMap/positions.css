@@ -1,0 +1,343 @@
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 99;
+}
+
+/* Popup panel right pop up */
+.info-panel {
+    position: fixed;
+    display: none;
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 650px;
+    height: 940px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.805);
+    border-color: rgba(189, 13, 13, 0.755);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+}
+
+#infoRightPanel {
+    right: 30px;
+}
+
+#infoLeftPanel {
+    left: 30px;
+}
+
+
+
+#mainBldg, #oval, #lagoon,
+#chapel, #lib, #ousBldg, 
+#cdr, #linear, #obelisk, 
+
+#pylon, #mural, #visitors,
+#gym, #alumni, #pool,
+#court, #research, #catWalk,
+
+#coc, #cea, #itech,
+#BPoffice, #hasmin {
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    /* border: transparent; */
+}
+
+#mainBldg:hover, 
+#oval:hover, 
+#lagoon:hover,
+#chapel:hover, 
+#lib:hover, 
+#ousBldg:hover, 
+#cdr:hover, 
+#linear:hover, 
+#obelisk:hover, 
+
+#pylon:hover, 
+#mural:hover, 
+#visitors:hover,
+#gym:hover, 
+#alumni:hover, 
+#pool:hover,
+#court:hover, 
+#research:hover, 
+#catWalk:hover,
+
+#coc:hover, 
+#cea:hover, 
+#itech:hover,
+#BPoffice:hover, 
+#hasminBldg:hover {
+    border: 2px solid rgb(255, 251, 0); 
+    border-radius: 20px;
+}
+
+/* ------------------------------------------------------- */
+/* Left side */
+
+/* Main building */
+#mainBldg {
+    position: fixed;
+    top: 34%;   /* adjust coordinates here */
+    left: 14%;  /* adjust coordinates here */
+    width: 300px;
+    height: 120px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* oval */
+#oval {
+    position: fixed;
+    top: 62%;   /* adjust coordinates here */
+    left: 23%;  /* adjust coordinates here */
+    width: 570px;
+    height: 190px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* lagoon */
+#lagoon {
+    position: fixed;
+    top: 39%;   /* adjust coordinates here */
+    left: 34%;  /* adjust coordinates here */
+    width: 250px;
+    height: 90px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* chapel */
+#chapel {
+    position: fixed;
+    top: 48%;   /* adjust coordinates here */
+    left: 14%;  /* adjust coordinates here */
+    width: 250px;
+    height: 130px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* library */
+#lib {
+    position: fixed;
+    top: 29%;   /* adjust coordinates here */
+    left: 42%;  /* adjust coordinates here */
+    width: 250px;
+    height: 90px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* OUS bldg */
+#ousBldg {
+    position: fixed;
+    top: 22%;   /* adjust coordinates here */
+    left: 40%;  /* adjust coordinates here */
+    width: 150px;
+    height: 65px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* charlie del rosario bldg */
+#cdr {
+    position: fixed;
+    top: 30%;   /* adjust coordinates here */
+    left: 33%;  /* adjust coordinates here */
+    width: 95px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* linear */
+#linear {
+    position: fixed;
+    top: 24%;   /* adjust coordinates here */
+    left: 35%;  /* adjust coordinates here */
+    width: 94px;
+    height: 60px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* obelisk */
+#obelisk {
+    position: fixed;
+    top: 40%;   /* adjust coordinates here */
+    left: 47%;  /* adjust coordinates here */
+    width: 95px;
+    height: 90px;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------- */
+
+/* Right side */
+
+/* Pylon */
+#pylon {
+    position: fixed;
+    top: 66%;   /* adjust coordinates here */
+    right: 25%;  /* adjust coordinates here */
+    width: 90px;
+    height: 75px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Mural */
+#mural {
+    position: fixed;
+    top: 70%;   /* adjust coordinates here */
+    right: 30%;  /* adjust coordinates here */
+    width: 70px;
+    height: 75px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Visitor */
+#visitors {
+    position: fixed;
+    top: 62%;   /* adjust coordinates here */
+    right: 29%;  /* adjust coordinates here */
+    width: 73px;
+    height: 75px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* gym */
+#gym {
+    position: fixed;
+    top: 43%;   /* adjust coordinates here */
+    right: 20%;  /* adjust coordinates here */
+    width: 240px;
+    height: 150px;
+    background: transparent;
+    cursor: pointer;
+    transform: rotate(25deg);
+}
+
+/* parking and tennis court */
+#court {
+    position: fixed;
+    top: 49%;   /* adjust coordinates here */
+    right: 30%;  /* adjust coordinates here */
+    width: 280px;
+    height: 69px;
+    background: transparent;
+    cursor: pointer;
+    transform: rotate(27deg);
+}
+
+/* Kinetic and Alumni Building */
+#alumni {
+    position: fixed;
+    top: 36%;   /* adjust coordinates here */
+    right: 37%;  /* adjust coordinates here */
+    width: 210px;
+    height: 76px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Pool */
+#pool {
+    position: fixed;
+    top: 41%;   /* adjust coordinates here */
+    right: 33%;  /* adjust coordinates here */
+    width: 98px;
+    height: 76px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Engineering and Science Research Center */
+#research {
+    position: fixed;
+    top: 55%;   /* adjust coordinates here */
+    right: 12%;  /* adjust coordinates here */
+    width: 210px;
+    height: 80px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Catwalk */
+#catWalk {
+    position: fixed;
+    top: 59%;   /* adjust coordinates here */
+    right: 31%;  /* adjust coordinates here */
+    width: 340px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+    transform: rotate(33deg);
+}
+
+/* ------------------------------------------------------- */
+/* CEA, COC, ITECH */
+
+/* coc */
+#coc {
+    position: fixed;
+    top: 14%;   /* adjust coordinates here */
+    right: 27%;  /* adjust coordinates here */
+    width: 110px;
+    height: 90px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#cea {
+    position: fixed;
+    top: 8%;   /* adjust coordinates here */
+    right: 21%;  /* adjust coordinates here */
+    width: 150px;
+    height: 90px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#itech {
+    position: fixed;
+    top: 5%;   /* adjust coordinates here */
+    right: 15%;  /* adjust coordinates here */
+    width: 130px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#BPoffice {
+    position: fixed;
+    top: 11%;   /* adjust coordinates here */
+    right: 15%;  /* adjust coordinates here */
+    width: 130px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#hasmin {
+    position: fixed;
+    top: 1%;   /* adjust coordinates here */
+    right: 5%;  /* adjust coordinates here */
+    width: 165px;
+    height: 70px;
+    background: transparent;
+    cursor: pointer;
+}
