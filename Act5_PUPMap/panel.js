@@ -17,7 +17,7 @@ function closePanel() {
 function openPanel(panel, htmlPath) {
   panel.src = htmlPath;
   panel.style.display = 'block';
-  overlay.style.display = 'block';
+  overlay.style.display = 'block';2
 }
 
 // Close panel when clicking overlay
