@@ -43,14 +43,14 @@ const locations = {
     { id: 'ousBldg', path: 'LeftParts/ousBldg.html' },
     { id: 'cdr', path: 'LeftParts/cdr.html' },
     { id: 'obelisk', path: 'LeftParts/obelisk.html' },
-    { id: 'linear', path: 'LeftParts/linear.html' }
+    { id: 'linear', path: 'LeftParts/linear.html' },
+    { id: 'shrine', path: "LeftParts/shrine.html"}
   ],
   
   // Right side locations
   rightSide: [
     { id: 'pylon', path: 'RightParts/pylon.html' },
     { id: 'mural', path: 'RightParts/mural.html' },
-    { id: 'visitors', path: 'RightParts/visitor.html' },
     { id: 'gym', path: 'RightParts/gym.html' },
     { id: 'alumni', path: 'RightParts/alumni.html' },
     { id: 'pool', path: 'RightParts/pool.html' },

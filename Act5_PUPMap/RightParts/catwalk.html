@@ -1,63 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUP Catwalk Info</title>
-        
-    <style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUP CatWalk</title>
+<style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        color: #111;
-        height: 100vh;
-        overflow-y: auto;
-        backdrop-filter: blur(10px);
-        padding: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background: transparent;
+        color: #000;
     }
 
+    .panel {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        padding: 25px;
+        box-sizing: border-box;
+    }
 
     .close-btn {
         position: absolute;
         top: 15px;
         left: 20px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
         background: transparent;
         border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
         color: #333;
     }
 
-    .close-btn:hover {
-        color: red;
-    }
-
-    h1 {
-        color: #b00000;
+    .header-img {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-top: 20px;
         margin-bottom: 15px;
     }
 
-    p {
+    .title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #a30e0e;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        text-align: justify;
+        font-size: 14px;
         line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #a30e0e;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin: 5px 0 15px 0;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .other-images {
+        margin-top: 25px;
+    }
+
+    .other-images img {
+        width: 100%;
+        height: 700px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #a30e0e;
+        border-radius: 4px;
     }
 </style>
-
-
 </head>
 <body>
-<div class="panel">
-    <button class="close-btn" onclick="closePanel()">×</button>
-    <h1>PUP CatWalk Info</h1>
-    <p>
-    
-    </p>
-</div>
+    <div class="panel">
+        <button class="close-btn" onclick="window.parent.closePanel()">×</button>
+        <img src="../imagesAsset/catwalk/1.jpg" alt="PUP Main Building" class="header-img">
 
-<script>
-    function closePanel() {
-    window.parent.postMessage('closePanel', '*');
-    }
-</script>
+        <div class="title">PUP CatWalk</div>
+        <div class="subtitle">14.598946, 121.011608</div>
+
+        <div class="content">
+            
+            <p>
+                The PUP Catwalk is a long walkway that stretches directly from the Main Gate of the Polytechnic 
+                University of the Philippines, Sta. Mesa to the PUP Obelisk. It serves as the main pedestrian pathway for students, 
+                faculty, and visitors entering the campus. The Catwalk offers a refreshing canopy of trees that 
+                provide shade throughout the day, making it one of the most relaxing and scenic spots in the university.
+            </p>
+
+            <h3>Significance and Features:</h3>
+            <ul>
+                <li>The surrounding greenery and benches make it an ideal spot for rest, casual talks, and photography.</li>
+                <li>Provides study areas, computer sections, and discussion rooms, promoting both individual and collaborative learning.</li>
+                <li>Serves as the first view for anyone entering PUP Sta. Mesa, highlighting the Obelisk straight ahead.</li>
+            </ul>
+
+            <h3>Other Images:</h3>
+            <div class="other-images">
+                <img src="../imagesAsset/catwalk/2.jpg" alt="PUP Linear">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

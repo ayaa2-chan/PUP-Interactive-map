@@ -1,63 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oval Field Info</title>
-        
-    <style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUP Oval Field</title>
+<style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        color: #111;
-        height: 100vh;
-        overflow-y: auto;
-        backdrop-filter: blur(10px);
-        padding: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background: transparent;
+        color: #000;
     }
 
+    .panel {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(8px);
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        padding: 25px;
+        box-sizing: border-box;
+    }
 
     .close-btn {
         position: absolute;
         top: 15px;
         left: 20px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
         background: transparent;
         border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
         color: #333;
     }
 
-    .close-btn:hover {
-        color: red;
-    }
-
-    h1 {
-        color: #b00000;
+    .header-img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-top: 20px;
         margin-bottom: 15px;
     }
 
-    p {
+    .title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #a30e0e;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        text-align: justify;
+        font-size: 14px;
         line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #a30e0e;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin: 5px 0 15px 0;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    .other-images {
+        margin-top: 25px;
+    }
+
+    .other-images img {
+        width: 100%;
+        height: 700px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .otherpa img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+
+    /* scrollbar */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #a30e0e;
+        border-radius: 4px;
     }
 </style>
-
-
 </head>
 <body>
-<div class="panel">
-    <button class="close-btn" onclick="closePanel()">×</button>
-    <h1>Oval Field</h1>
-    <p>
-    
-    </p>
-</div>
+    <div class="panel">
+        <button class="close-btn" onclick="window.parent.closePanel()">×</button>
+        <img src="../imagesAsset/Oval/1.jpg" alt="PUP Main Building" class="header-img">
 
-<script>
-    function closePanel() {
-    window.parent.postMessage('closePanel', '*');
-    }
-</script>
+        <div class="title">PUP Oval Field</div>
+        <div class="subtitle">14.598101, 121.012017</div>
+
+        <div class="content">
+            
+            <p>
+               The PUP Oval Field, located within the A. Mabini Campus in Sta. Mesa, serves as the main 
+               outdoor sports and event area of the Polytechnic University of the Philippines. This wide, 
+               open field is designed for track and field events, sports practices, parades, and large 
+               campus gatherings such as intramurals and commencement exercises.
+            </p>
+
+            <h3>Significance and Features:</h3>
+            <ul>
+                <li>
+                    The Oval is a central venue for athletic development, physical education classes, 
+                    and university-wide activities, promoting fitness and camaraderie among students.
+                </li>
+                <li>It is surrounded by major campus landmarks including the Main Building, Grandstand, 
+                    and Lagoon, making it one of the most recognizable open spaces in PUP.</li>
+                <li>The field includes a standard running track, green turf area, and bleachers where 
+                    spectators can watch sports and performances.</li>
+            </ul>
+
+            <h3>Key Notes:</h3>
+            <ul>
+                <li>The entire A. Mabini Campus spans approximately 10.71 hectares, with the Oval occupying 
+                    a large open portion dedicated to physical and cultural activities.</li>
+                <li>It also serves as a venue for assemblies, and student organization events, 
+                    reflecting the university’s lively and community-oriented culture.</li>
+            </ul>
+
+            <h3>Other Images:</h3>
+            <div class="other-images">
+                <img src="../imagesAsset/Oval/2.jpg" alt="PUP Oval Field">
+            </div>
+            <div class="otherpa">
+                <img src="../imagesAsset/Oval/3.jpg" alt="PUP Oval Field">
+                <img src="../imagesAsset/Oval/4.jpg" alt="PUP Oval Field">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
