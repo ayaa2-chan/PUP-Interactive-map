@@ -30,88 +30,80 @@
 
     <!-- Page 2 -->
     <section id="map" class="page">
-        <img id="PUPmap" src="AssetMain/PUP.jpg" alt="PUP Vicinity Map" class="map-image">
+        <img id="PUPmap" src="AssetMain/PUP.jpg" alt="PUP Vicinity Map" class="map-image" usemap="#pupmap">
+            
+            <!-- Hover-->
+            <div id="mainBldg" ></div>
+            <div id="oval"></div>
+            <div id="lagoon"></div>
+            <div id="chapel"></div>
+            <div id="lib"></div>
+            <div id="ousBldg"></div>
+            <div id="cdr"></div>
+            <div id="linear"></div>
+            <div id="obelisk"></div>
+            <div id="shrine"></div>
+
+            <div id="pylon"></div>
+            <div id="mural"></div>
+            <div id="gym"></div>
+            <div id="alumni"></div>
+            <div id="pool"></div>
+            <div id="court"></div>
+            <div id="courto"></div>
+            <div id="research"></div>
+            <div id="catWalk"></div>
+
+            <div id="coc"></div>
+            <div id="cea"></div>
+            <div id="itech"></div>
+            <div id="BPoffice"></div>
+            <div id="hasmin"></div>
+
         <button id="back" class="home-btn">Home</button>
 
-        <!-- Left Side -->
-            <!-- main building button -->
-            <button id="mainBldg" title="Main Building"></button>
+        <map name="pupmap">
+            <!-- left -->
+            <area shape="rect" coords="192,367,642,527" alt="Main Building" onclick="openPanel(infoRightPanel, 'LeftParts/mainBldg.html')" >
+            <area shape="rect" coords="442,670,1212,975" alt="Oval" onclick="openPanel(infoRightPanel, 'LeftParts/ovalField.html')">
+            <area shape="rect" coords="652,411,920,518" alt="Lagoon" onclick="openPanel(infoRightPanel, 'LeftParts/lagoon.html')">
+            <area shape="rect" coords="268,518,518,648" alt="Chapel" onclick="openPanel(infoRightPanel, 'LeftParts/chapel.html')">
+            <area shape="rect" coords="806,313,1056,403" alt="Library" onclick="openPanel(infoRightPanel, 'LeftParts/lib.html')">
+            <area shape="rect" coords="768,238,918,303" alt="OUS" onclick="openPanel(infoRightPanel, 'LeftParts/ousBldg.html')">
+            <area shape="rect" coords="634,324,729,394" alt="CDR" onclick="openPanel(infoRightPanel, 'LeftParts/cdr.html')">
+            <area shape="rect" coords="720,250,820,310" alt="Linear" onclick="openPanel(infoRightPanel, 'LeftParts/linear.html')">
+            <area shape="rect" coords="902,432,1085,529" alt="Obelisk" onclick="openPanel(infoRightPanel, 'LeftParts/obelisk.html')">
+            <area shape="rect" coords="860,530,1080,600" alt="Shrine" onclick="openPanel(infoRightPanel, 'LeftParts/shrine.html')">
 
-            <!-- oval field -->
-            <button id="oval" title="Oval field"></button>
+            <!-- right -->
+            <area shape="rect" coords="1440,713,1613,794" alt="Pylon" onclick="openPanel(infoLeftPanel, 'RightParts/pylon.html')">
+            <area shape="rect" coords="1344,756,1478,837" alt="Mural" onclick="openPanel(infoLeftPanel, 'RightParts/mural.html')">
+            <area shape="rect" coords="1497,464,1667,634" alt="Gymnasium" onclick="openPanel(infoLeftPanel, 'RightParts/gym.html')">
+            <area shape="rect" coords="1267,529,1417,625" alt="Court" onclick="openPanel(infoLeftPanel, 'RightParts/court.html')">
+            <area shape="rect" coords="1363,594,1513,604" alt="Court" onclick="openPanel(infoLeftPanel, 'RightParts/court.html')">
+            <area shape="rect" coords="1100,360,1300,440" alt="Alumni" onclick="openPanel(infoLeftPanel, 'RightParts/alumni.html')">
+            <area shape="rect" coords="1280,420,1370,480" alt="Pool" onclick="openPanel(infoLeftPanel, 'RightParts/pool.html')">
+            <area shape="rect" coords="1600,580,1810,660" alt="Research Center" onclick="openPanel(infoLeftPanel, 'RightParts/research.html')">
+            <area shape="rect" coords="1325,691,1526,767" alt="Catwalk" onclick="openPanel(infoLeftPanel, 'RightParts/catwalk.html')">
+            <area shape="rect" coords="1267,670,1459,740" alt="Catwalk" onclick="openPanel(infoLeftPanel, 'RightParts/catwalk.html')">
+            <area shape="rect" coords="1229,626,1459,696" alt="Catwalk" onclick="openPanel(infoLeftPanel, 'RightParts/catwalk.html')">
+            <area shape="rect" coords="1152,583,1363,653" alt="Catwalk" onclick="openPanel(infoLeftPanel, 'RightParts/catwalk.html')">
+            <area shape="rect" coords="1114,540,1344,610" alt="Catwalk" onclick="openPanel(infoLeftPanel, 'RightParts/catwalk.html')">
 
-            <!-- lagoon -->
-            <button id="lagoon" title="Lagoon"></button>
+            <!-- taas -->
+            <area shape="rect" coords="1350,150,1460,240" alt="COC" onclick="openPanel(infoLeftPanel, 'UpperParts/coc.html')">
+            <area shape="rect" coords="1480,100,1630,190" alt="CEA" onclick="openPanel(infoLeftPanel, 'UpperParts/cea.html')">
+            <area shape="rect" coords="1650,70,1780,150" alt="ITECH" onclick="openPanel(infoLeftPanel, 'UpperParts/itech.html')">
+            <area shape="rect" coords="1660,140,1790,210" alt="BP Office" onclick="openPanel(infoLeftPanel, 'UpperParts/BPoffice.html')">
+            <area shape="rect" coords="1810,30,2010,120" alt="Hasmin" onclick="openPanel(infoLeftPanel, 'UpperParts/hasminBldg.html')">
+        </map>
 
-            <!-- chapel -->
-            <button id="chapel" title="Inter-Faith Chapel"></button>
-
-            <!-- library -->
-            <button id="lib" title="Ninoy Aquino Learning Resource Center"></button>
-
-            <!-- OUS bldg -->
-            <button id="ousBldg" title="OUS Building"></button>
-
-            <!-- charlie -->
-            <button id="cdr" title="Charlie Del Rosario Building"></button>
-
-            <!-- linear -->
-            <button id="linear" title="Linear"></button>
-
-            <!-- obelisk -->
-            <button id="obelisk" title="Obelisk"></button>
-
-            <!-- mabini shrine and museum -->
-            <button id="shrine" title="Mabini Musuem and Shrine"></button>
-
-        <!-- Right Side -->
-            <!-- Pylon -->
-            <button id="pylon" title="Pylon"></button>
-
-            <!-- Mural -->
-            <button id="mural" title="PUP Mural"></button>
-
-            <!-- Gymnasium Lounge -->
-            <button id="gym" title="Gymnasium"></button>
-
-            <!-- Alumni Bdlg -->
-            <button id="alumni" title="Alumni & Human Kinetic Building"></button>
-
-            <!-- pool -->
-            <button id="pool" title="PUP pool"></button>
-
-            <!-- parking & tennis court -->
-            <button id="court" title="Parking & Tennis Court"></button>
-
-            <!-- Research center -->
-            <button id="research" title="Engineering and Science Research Center"></button>
-
-            <!-- PUP catwalk -->
-            <button id="catWalk" title="PUP Catwalk"></button>
-
-        <!-- COC, CEA, ITECH -->
-            <!-- COC bldg -->
-            <button id="coc" title="College of Communication Building"></button>
-
-            <!-- CEA bldg -->
-            <button id="cea" title="College of Engineering and Architecture Building"></button>
-
-            <!-- ITECH bldg -->
-            <button id="itech" title="Information Technology Building"></button>
-
-            <!-- Business Processing Office bldg -->
-            <button id="BPoffice" title="Business Processing Office"></button>
-
-            <!-- hasmin Building -->
-            <button id="hasmin" title="Hasmin Building"></button>
-
-
-        <!-- overlay + info panel -->
+        <!-- overlay + panels -->
         <div id="overlay"></div>
         <iframe id="infoLeftPanel" class="info-panel"></iframe>
         <iframe id="infoRightPanel" class="info-panel"></iframe>
+        </section>
 
-    </section>  
 
     <script src="navigations.js"></script> 
     <script src="panel.js"></script>

@@ -45,68 +45,66 @@
     left: 30px;
 }
 
+/*
+#mainBldg, #oval, #lagoon, 
+#chapel, #lib, #ousBldg,
+#cdr, #linear, #obelisk, #shrine,
 
+#pylon, #mural, #gym,
+#alumni, #pool, #court,
+#research, #catWalk,
 
-#mainBldg, #oval, #lagoon,
-#chapel, #lib, #ousBldg, 
-#cdr, #linear, #obelisk, #shrine, 
-
-#pylon, #mural, #visitors,
-#gym, #alumni, #pool,
-#court, #research, #catWalk,
-
-#coc, #cea, #itech,
+#coc, #cea, #itech, 
 #BPoffice, #hasmin {
-    /* border: 3px solid rgb(207, 222, 0); */
+    position: absolute;
+    background: transparent;
     border-radius: 20px;
-    border: transparent;
+    cursor: pointer;
+    transition: border 0.2s ease;
+
 }
 
 #mainBldg:hover, 
 #oval:hover, 
-#lagoon:hover,
-#chapel:hover, 
+#lagoon:hover, 
+#chapel:hover,
 #lib:hover, 
 #ousBldg:hover, 
 #cdr:hover, 
 #linear:hover, 
 #obelisk:hover, 
 #shrine:hover,
-
 #pylon:hover, 
 #mural:hover, 
-#visitors:hover,
 #gym:hover, 
 #alumni:hover, 
-#pool:hover,
-#court:hover, 
+#pool:hover, 
+#court:hover,
 #research:hover, 
 #catWalk:hover,
-
-#coc:hover, 
-#cea:hover, 
+#catWalk1:hover,
+#catWalk2:hover,
+#catWalk3:hover,
+#catWalk4:hover,
+#catWalk5:hover,
+#coc:hover, #cea:hover, 
 #itech:hover,
 #BPoffice:hover, 
 #hasmin:hover {
-    border: 4px solid rgb(179, 0, 0); 
-    border-radius: 20px;
+    border: 5px solid rgb(255, 247, 0);
 }
 
-/* ------------------------------------------------------- */
-/* Left side */
 
-/* Main building */
 #mainBldg {
     position: fixed;
     top: 34%;   
-    left: 14%;  
-    width: 300px;
-    height: 120px;
+    left: 10%;  
+    width: 450px;
+    height: 160px;
     background: transparent;
     cursor: pointer;
 }
 
-/* oval */
 #oval {
     position: fixed;
     top: 62%;   
@@ -117,7 +115,7 @@
     cursor: pointer;
 }
 
-/* lagoon */
+
 #lagoon {
     position: fixed;
     top: 39%;   
@@ -128,7 +126,6 @@
     cursor: pointer;
 }
 
-/* chapel */
 #chapel {
     position: fixed;
     top: 48%;   
@@ -139,7 +136,6 @@
     cursor: pointer;
 }
 
-/* library */
 #lib {
     position: fixed;
     top: 29%;   
@@ -150,7 +146,6 @@
     cursor: pointer;
 }
 
-/* OUS bldg */
 #ousBldg {
     position: fixed;
     top: 22%;   
@@ -161,7 +156,6 @@
     cursor: pointer;
 }
 
-/* charlie del rosario bldg */
 #cdr {
     position: fixed;
     top: 30%;   
@@ -172,7 +166,6 @@
     cursor: pointer;
 }
 
-/* linear */
 #linear {
     position: fixed;
     top: 24%;   
@@ -183,10 +176,9 @@
     cursor: pointer;
 }
 
-/* obelisk */
 #obelisk {
     position: fixed;
-    top: 40%;   
+    top: 41%;   
     left: 47%;  
     width: 95px;
     height: 90px;
@@ -194,7 +186,6 @@
     cursor: pointer;
 }
 
-/* shrine */
 #shrine {
     position: fixed;
     top: 51%;   
@@ -206,11 +197,7 @@
 }
 
 
-/* ------------------------------------------------------- */
 
-/* Right side */
-
-/* Pylon */
 #pylon {
     position: fixed;
     top: 66%;   
@@ -221,7 +208,6 @@
     cursor: pointer;
 }
 
-/* Mural */
 #mural {
     position: fixed;
     top: 70%;   
@@ -232,7 +218,6 @@
     cursor: pointer;
 }
 
-/* gym */
 #gym {
     position: fixed;
     top: 43%;   
@@ -244,10 +229,9 @@
     transform: rotate(25deg);
 }
 
-/* parking and tennis court */
 #court {
     position: fixed;
-    top: 49%;   
+    top: 51%;   
     right: 30%;  
     width: 280px;
     height: 69px;
@@ -256,7 +240,6 @@
     transform: rotate(27deg);
 }
 
-/* Kinetic and Alumni Building */
 #alumni {
     position: fixed;
     top: 36%;   
@@ -267,7 +250,6 @@
     cursor: pointer;
 }
 
-/* Pool */
 #pool {
     position: fixed;
     top: 41%;   
@@ -278,18 +260,16 @@
     cursor: pointer;
 }
 
-/* Engineering and Science Research Center */
 #research {
     position: fixed;
-    top: 55%;   
+    top: 51%;   
     right: 12%;  
     width: 210px;
-    height: 80px;
+    height: 130px;
     background: transparent;
     cursor: pointer;
 }
 
-/* Catwalk */
 #catWalk {
     position: fixed;
     top: 59%;   
@@ -301,10 +281,7 @@
     transform: rotate(33deg);
 }
 
-/* ------------------------------------------------------- */
-/* CEA, COC, ITECH */
 
-/* coc */
 #coc {
     position: fixed;
     top: 14%;   
@@ -348,9 +325,9 @@
 #hasmin {
     position: fixed;
     top: 1%;   
-    right: 5%;  
-    width: 165px;
-    height: 70px;
+    right: 4%;  
+    width: 200px;
+    height: 90px;
     background: transparent;
     cursor: pointer;
-}
+}   
