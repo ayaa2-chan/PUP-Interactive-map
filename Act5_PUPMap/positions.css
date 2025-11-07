@@ -45,7 +45,7 @@
     left: 30px;
 }
 
-/*
+
 #mainBldg, #oval, #lagoon, 
 #chapel, #lib, #ousBldg,
 #cdr, #linear, #obelisk, #shrine,
@@ -60,10 +60,9 @@
     background: transparent;
     border-radius: 20px;
     cursor: pointer;
-    transition: border 0.2s ease;
-
 }
 
+/*  */
 #mainBldg:hover, 
 #oval:hover, 
 #lagoon:hover, 
